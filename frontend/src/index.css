@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
+
+@layer base {
+  /* Adding our custom font face */
+  @font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local("Jost Light"),
+      url(/src/assets/fonts/jligth.ttf) format("ttf");
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local("Jost SemiBold"),
+      url(/src/assets/fonts/jmedium.ttf) format("ttf");
+  }
+
+  /* To make types look sexy */
+  html {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+    background-color: #1E2737;
+  }
+}

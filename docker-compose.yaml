@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - api:/data/db
+  frontend:
+    build: ./frontend
+    ports:
+      - 2000:5000
+  api:
+    build: ./api
+    ports:
+      - 8000:1300
+volumes:
+  api:
