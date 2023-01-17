@@ -6,7 +6,7 @@ import IndexPage from "../pages";
 import AboutPage from "../pages/about.page";
 import ContactPage from "../pages/contact.page";
 import FaqPage from "../pages/faq.page";
-import SigninPage from "../pages/sigin.page";
+import { SigninPage } from "../pages/sigin.page";
 import SignupPage from "../pages/signup.page";
 import VerificationPage from "../pages/verification.page";
 

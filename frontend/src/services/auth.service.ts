@@ -1,12 +1,9 @@
-import { DataService } from "./data.service";
+import DataService from "./data.service";
 
 class AuthService extends DataService {
     login = (data: any) => {
-        this.client.post("/auth/login", data)
-    }
-    register = (data: any) => {
-        this.client.post("/auth/create", data)
+        return this.client.post("/auth/login", data)
     }
 }
 
-export { AuthService }
+export default AuthService
