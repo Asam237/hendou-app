@@ -29,6 +29,9 @@ class Validator implements IValidator {
     public static method: ValidationMethod = {
         user: {
             createUser: "createUser"
+        },
+        account: {
+            createAccount: "createAccount"
         }
     }
 }

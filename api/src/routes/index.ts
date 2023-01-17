@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 import * as bodyParser from "body-parser"
 import AuthRoute from "./auth.route"
+import AccountRoute from "./account.route"
 
 class Routes {
     public static init(app: express.Application) {
@@ -10,6 +11,7 @@ class Routes {
         app.use(cors())
         app.use("/", router)
         app.use("/", new AuthRoute().router)
+        app.use("/", new AccountRoute().router)
     }
 }
 
