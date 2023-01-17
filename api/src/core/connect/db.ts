@@ -10,12 +10,13 @@ export const connectToDb = async () => {
 }
 
 connection.on("connected", () => {
-    console.log(`[Mongo DB] connected to ${connection.db.databaseName}`)
+    console.log(`[mongodb]: connected to ${connection.db.databaseName}`)
 })
 
 connection.on("disconnected", () => {
-    console.log(`[Mongo DB] disconnected to`)
+    console.log(`[mongodb]: disconnected`)
 })
 connection.on("error", (error) => {
-    console.log(`[Mongo DB] error to ${error}`)
+    console.log(`[mongodb]: error to ${error}`)
 })
+
